@@ -1,0 +1,224 @@
+#header{
+  background-color: #808080;
+  color: White;
+  font-family: cursive;
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius:0px 0px 5px 5px;
+  padding: 20px;
+}
+#header img{
+display: block;
+float: left;
+margin-left: auto;
+margin-right: auto;
+width: 3%;
+}
+body{
+  background-color: #4a4a4a;
+  font-family: cursive;
+}
+#container{
+  background-color: #999999;
+  width: 1024px
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:5px;
+}
+#content{
+  padding: 10px
+}
+#nav{
+  width: 150px;
+  float:left;
+  font-size: 30px;
+  padding: 10px;
+  background-color:grey;
+  border-color: #e8cead;
+  border-style:outset;
+  border-radius: 20px 10px;
+  font-family:"Brush Script MT",cursive;
+  margin-bottom: 10px;
+  height: 260px;
+}
+#navfiller{
+  width: 150px;
+  align: left;
+  padding: 10px;
+}
+img{
+  border-radius:10px;
+}
+#Main{
+  border-style:solid;
+  border-width: thick;
+  border-color:#e8cead;
+  margin-right: 86px;
+  padding-left: 9px;
+  width: 1200px;
+  float: right;
+  border-radius: 20px;
+  background-color: #E6E6E6;
+  margin-bottom: 10px;
+}
+#footer{
+  clear: both;
+  padding: 10px;
+  background-color: grey;
+  color: #ffffff;
+  text-align: right;
+  border-radius: 50px;
+}
+#nav.selected{
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+a:hover{
+  color:#fac3af;
+}
+#nav a{
+  font-size: 25px
+}
+#nav ul{
+  list-style-type: none;
+  padding: 0;
+}
+h1{
+margin:0;}
+h2{
+  margin-bottom: 5px;
+  font-family: cursive;
+  font-size: 30px;
+  margin-left: 20px;
+}
+h3{
+  margin:0;
+  font-family: "Brush Script MT",cursive;
+  font-size: 30px;
+  text-align: center;
+  color:#e8cead;
+}
+.button {
+  border-radius: 25px;
+  background-color: #e8cead;
+  font-family:"Brush Script MT",cursive;
+  border: none;
+  color: white;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-style: none none solid solid;
+  border-radius: 25px;
+  border-width: 4px;
+  border-color: darkgrey;
+}
+.button:hover{
+  background-color: #CBB291;
+  border-style: none;
+  border-radius: 25px;
+  margin: 4px 2px;
+  margin-bottom: 8px;
+}
+#imageleftpadding{
+  padding-top:5px;
+  width: 650px;
+  padding-left: 10px;
+  border-radius: 20px;
+  border-style: solid none solid none;
+  border-color: black;
+  background-color: white;
+}
+#projectimages{
+  width:1100px;
+  border-color:grey;
+  border-radius: 10px;
+  background: white;
+  border-style: solid;
+  border-width: thick;
+  padding:10px;
+  margin-bottom: 100px;
+}
+#profile{
+margin-left: 600px;
+height: 200px;
+border-color:grey;
+border-width: 4px;
+border-style:solid;
+border-radius: 15px;
+}
+#sssss{
+  border-style: double none double none;
+  border-color:black;
+margin-right: 10px;
+margin-right: 10px;
+border-width: 5px;
+}
+#titleimage{
+border-style:solid;
+border-color:#e6e6e6;
+height: 185px;
+width: 300px;
+background-color:darkgrey;
+border-width:;
+border-radius:20px;
+margin-top:10px;
+margin-bottom:10px;
+}
+#back{
+  width: 150px;
+  float:right;
+  font-size: 30px;
+  padding: 10px;
+  font-family:"Brush Script MT",cursive;
+  margin-bottom: 10px;
+}
+#right{
+border-bottom-width:10px;
+border-radius: 0px;
+height:200px;
+}
+#sable tr{
+  width: 200px;
+  border-radius:20px;
+  background-color: darkgrey;
+  padding:5px;
+  color: #e8cead;
+}
+#sable td{
+  width: 200px;
+  border-radius:20px;
+  background-color: darkgrey;
+  padding:5px;
+  color: #e8cead;
+}
+#sable {
+width:400px;
+text-align: center;
+border-radius: 20px;
+padding: 10px;
+background-color: white;
+}
+#projectimage{
+  width:800px;
+  border-color:grey;
+  border-radius: 10px;
+  background: white;
+  border-style: solid;
+  border-width: thick;
+  padding:10px;
+  margin-bottom: 100px;
+}
+.center{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
