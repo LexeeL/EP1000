@@ -5,8 +5,15 @@
   text-align: left;
   margin-left: 10px;
   margin-right: 10px;
-  padding: 20px;
   border-radius:0px 0px 5px 5px;
+  padding: 20px;
+}
+#header img{
+display: block;
+float: left;
+margin-left: auto;
+margin-right: auto;
+width: 3%;
 }
 body{
   background-color: #4a4a4a;
@@ -33,6 +40,7 @@ body{
   border-radius: 20px 10px;
   font-family:"Brush Script MT",cursive;
   margin-bottom: 10px;
+  height: 260px;
 }
 #navfiller{
   width: 150px;
@@ -79,7 +87,8 @@ a:hover{
   list-style-type: none;
   padding: 0;
 }
-h1{margin:0;}
+h1{
+margin:0;}
 h2{
   margin-bottom: 5px;
   font-family: cursive;
@@ -106,9 +115,17 @@ h3{
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
+  border-style: none none solid solid;
+  border-radius: 25px;
+  border-width: 4px;
+  border-color: darkgrey;
 }
 .button:hover{
   background-color: #CBB291;
+  border-style: none;
+  border-radius: 25px;
+  margin: 4px 2px;
+  margin-bottom: 8px;
 }
 #imageleftpadding{
   padding-top:5px;
@@ -198,4 +215,10 @@ background-color: white;
   border-width: thick;
   padding:10px;
   margin-bottom: 100px;
+}
+.center{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
