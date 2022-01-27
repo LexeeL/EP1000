@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #4a4a4a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #e8cead;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #cbb291;
+    }
+</style>
+    <title>Arduino Assignment</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1><img src="Images/Cat.png" alt="Cat vector" class:"center">Arduino Assignment for Week 13</h1>
+      </div id="header">
+      <div id="content">
+        <div id="nav">
+        <h3>Navigation:</h3>
+          <ul>
+            <button class="button"><li> <a href="../index.html"> Main</a> </li></button>
+            <button class="button"><li> <a href="projectMain.html"> <b>Projects</b></a> </li></button>
+            <button class="button"><li> <a href="../About me.html"> About me</a> </li></button>
+
+          </ul>
+        </div id="nav">
+
+        <div id="Main">
+          <div id="back">
+            <button class="button"><a href="project.html"> Back</a></button>
+          </div>
+          <div id="titleimage">
+        <img src="Images/rotoboardProjects.png" alt="roto board">
+      </div>
+      <div id="libar">
+      <p>This page explains the process of me doing some simple program using Arduino</p>
+      <u><h2>Step 1 for every circuit</h2></u>
+      <ul>
+      <li>Setting up before Wiring circuit</li>
+        <div id="right">
+          <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+        </div>
+        <div id="projectimages">
+        <img src="Images/ArduinoStorage.jpg" alt="Storage" class="center">
+        <b>Keeping components safe so that it is not so easy to lose them.</b><p>-This is important as some of these parts are not cheap!!</p>
+        <img src="Images/VccAndGnd.JPG" alt="+-" class="center">
+        <b>This is a simple setup to wire Vcc to the + rows and Ground to - rows.</b>
+        <p>-This step is essential as a project may require powering many components and there is only one 5V pin on the arduino</p>
+      </div>
+      <p><u><h2>555 Assignment</h2></u></p>
+      <li> Q1 </li>
+        <div id="right">
+          <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+        </div>
+        <div id="projectimages">
+          <u>This part is the assignment I was tasked to do and how I tackled these questions</u><p></p>
+        <img src="Images/LEDsetup.JPG" alt="Blinking LED Circuit" class="center">
+        <img src="Images/BlinkingLED.JPG" alt="Blinking LED Circuit" class="center">
+        <b>This is a simple cicuit wiring a pin and setting it to output to power the LED and wiring cathode to ground to complete it</b>
+        <p>-This code is to make pin 6 High and Low which means the LED will on when it is High and off when it is low</p>
+        <img src="Images/.jpg" alt="Blinking LED GIF" class="center">
+        <b>This is the circuit which I wired together using the components seen in the previous picture</b>
+        <p></p>
+      </div>
+
+
+      <li> Q2 </li>
+      <div id="right">
+        <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+      </div>
+      <div id="projectimages">
+        <img src="Images/LEDsetupQ2.JPG" alt="Q2 circuit" class="center">
+        <img src="Images/ArduinoQ2.JPG" alt="Q2 Code" class="center">
+        <img src="Images/LEDBlinking.gif" alt="Cat" class="center">
+          <b>This circuit is the same as Q1, it is repeated 3 times for 3 LEDs in total</b>
+          <p>Like Q1, the code is to make pin 6,7 and 8 High and Low in a sequence to create a pattern</p>
+        <img src="Images/BlinkingLED.gif" alt="Blinking LED Circuit" class="center">
+        <b>This is what it looks like in the physical circuit</b><p></p>
+      </div>
+
+      <li> Q3 </li>
+      <div id="right">
+        <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+      </div>
+      <div id="projectimages">
+        <img src="Images/LEDsetupQ3.JPG" alt="Q2 circuit" class="center">
+        <img src="Images/ArduinoQ3.JPG" alt="Q2 Code" class="center">
+        <img src="Images/Switch.gif" alt="switch" class="center">
+          <b>This circuit is the similar as Q2, except now pin 4 is connected to a push button</b>
+          <p>In this circuit, pin 6 is set to an input, thus when the push button is pressed, a signal will be sent to the arduino through pin 6. Which the arduino will then turn pin 6,7 and 8 High in response</p>
+        <img src="Images/BlinkingLED.gif" alt="Blinking LED Circuit" class="center">
+        <b>This is what it looks like in the physical circuit</b><p></p>
+      </div>
+      <p><u><h2>Codes that I have tried out</h2></u></p>
+      <li>This are codes I have learnt in class and tested. Further explaination of it is <b>BELOW</b> them.</li>
+      <div id="right">
+        <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+      </div>
+        <div id="projectimages">
+          <img src="Images/" alt="Final Image" class="center">
+          This is a <u>Serial Monitor</u> code. It can output a number or words to help in programming.
+          <br>If product is not working, it can be used to test whether the code or the component is not working.</br>
+        </div>
+        <div id="projectimages">
+          <img src="Images/" alt="Final Image" class="center">
+          This is a <u>Debouncing</u> code. It is meant to fix the issue when pressing a button, it tends to bounce and give a spam of high and low inputs, thus this is to filter that input.
+        </div>
+        <div id="projectimages">
+          <img src="Images/" alt="Final Image" class="center">
+          This is a <u>State</u> code. As the code is always running, serial output is always giving a output, thus using state can provide easier visual access for the serial monitor.
+        </div>
+      <p><u><h2>Trying different components</h2></u></p>
+      <li>This are components given to me that I have tested. Further explaination is <b>BELOW</b> them.</li>
+      <div id="right">
+        <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+      </div>
+      <div id="projectimages">
+        <img src="Images/" alt="Final Image" class="center">
+        This is an <u>LED</u> and it is used to produce light when powered (Do make sure to use at least a 200&#937; resistor to reduce the Amperage if not it may spoil the resistor)
+      </div>
+      <div id="projectimages">
+        <img src="Images/" alt="Final Image" class="center">
+        This is a <u>Push Button</u>. It can be used to close the circuit as it remains open when not in use.
+      </div>
+      <div id="projectimages">
+        <img src="Images/" alt="Final Image" class="center">
+        This is a <u>Light Dependent Resistor</u>. It can be used to detect light level to optain a certain outcome e.g lighting up an LED when dark.
+      </div>
+      <div id="projectimages">
+        <img src="Images/" alt="Final Image" class="center">
+        This is a <u>Potentiometer</u>. It can be used to change the sensitivity of the circuit by detecting its value.
+      </div>
+      <div id="projectimages">
+        <img src="Images/" alt="Final Image" class="center">
+        <img src="Images/Distance.jpg" alt="Final Image" class="center">
+        <img src="Images/Distance.gif" alt="Final Image" class="center">
+        This is a <u>Ultra Sonicsensor</u>. It can be used to detect distance from it to activate something else.
+      </div>
+      <div id="projectimages">
+        <img src="Images/" alt="Final Image" class="center">
+        This is a <u>PIR Sensor</u>. It can be used to detect motion infront of it.
+      </div>
+      <div id="projectimages">
+        <img src="Images/" alt="Final Image" class="center">
+        This is a <u>Touch Sensor</u>
+      </div>
+      <p><u><h2>Q4</h2></u></p>
+      <li></li>
+      <div id="right">
+        <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+      </div>
+      <div id="projectimages">
+        <img src="Images/" alt="Final Image" class="center">
+      </div>
+      <p><u><h2>Step 6</h2></u></p>
+      <li></li>
+      <div id="right">
+        <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+      </div>
+      <div id="projectimages">
+        <img src="Images/" alt="Final Image" class="center">
+      </div>
+      <p><u><h2>Step 7</h2></u></p>
+      <li></li>
+      <div id="right">
+        <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+      </div>
+      <div id="projectimages">
+        <img src="Images/" alt="Final Image" class="center">
+      </div>
+      </ul>
+          </div>
+        </div id="Main">
+        <div id="navfiller">
+        <img src="Images/Kanae.jpg" alt="Navigation bar filler">
+      </div id="navfiller">
+        <div id="footer">
+          <p>Copyright &copy; 2021</p>
+        </div id="footer">
+      </div>
+  </body>
+
+</html>
