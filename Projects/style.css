@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 #header{
   background-color: #808080;
   color: White;
@@ -124,6 +127,7 @@ h3{
   border-radius: 25px;
   margin: 4px 2px;
   margin-bottom: 8px;
+  cursor: pointer;
 }
 #imageleftpadding{
   padding-top:5px;
