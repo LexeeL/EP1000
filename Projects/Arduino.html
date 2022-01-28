@@ -32,16 +32,16 @@
         <div id="nav">
         <h3>Navigation:</h3>
           <ul>
-            <button class="button"><li> <a href="../index.html"> Main</a> </li></button>
-            <button class="button"><li> <a href="projectMain.html"> <b>Projects</b></a> </li></button>
-            <button class="button"><li> <a href="../About me.html"> About me</a> </li></button>
+            <button class="button" onclick="window.location.href='../index.html'"><li> <a href="../index.html"> Main</a> </li></button>
+            <button class="button" onclick="window.location.href='projectMain.html'"><li> <a href="projectMain.html"> <b>Projects</b></a> </li></button>
+            <button class="button" onclick="window.location.href='../About me.html'"><li> <a href="../About me.html"> About me</a> </li></button>
 
           </ul>
         </div id="nav">
 
         <div id="Main">
           <div id="back">
-            <button class="button"><a href="project.html"> Back</a></button>
+            <button class="button" onclick="window.location.href='project.html'"> <a href="project.html"> Back</a></button>
           </div>
           <div id="titleimage">
         <img src="Images/rotoboardProjects.png" alt="roto board">
@@ -62,7 +62,7 @@
         <p>-This step is essential as a project may require powering many components and there is only one 5V pin on the arduino</p>
       </div>
       <p><u><h2>555 Assignment</h2></u></p>
-      <li> Q1 </li>
+      <li> Q1 Connect a LED and a current limiting resistor and blink LED in different patterns</li>
         <div id="right">
           <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
         </div>
@@ -72,13 +72,13 @@
         <img src="Images/BlinkingLED.JPG" alt="Blinking LED Circuit" class="center">
         <b>This is a simple cicuit wiring a pin and setting it to output to power the LED and wiring cathode to ground to complete it</b>
         <p>-This code is to make pin 6 High and Low which means the LED will on when it is High and off when it is low</p>
-        <img src="Images/.jpg" alt="Blinking LED GIF" class="center">
+        <img src="Images/LEDQ1.gif" alt="Blinking LED GIF" class="center">
         <b>This is the circuit which I wired together using the components seen in the previous picture</b>
         <p></p>
       </div>
 
 
-      <li> Q2 </li>
+      <li> Q2 Control 3 or more LEDs</li>
       <div id="right">
         <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
       </div>
@@ -92,18 +92,58 @@
         <b>This is what it looks like in the physical circuit</b><p></p>
       </div>
 
-      <li> Q3 </li>
+      <li> Q3 Adding a switch to flashing lights</li>
       <div id="right">
         <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
       </div>
       <div id="projectimages">
-        <img src="Images/LEDsetupQ3.JPG" alt="Q2 circuit" class="center">
-        <img src="Images/ArduinoQ3.JPG" alt="Q2 Code" class="center">
-        <img src="Images/Switch.gif" alt="switch" class="center">
+        <img src="Images/LEDsetupQ3.JPG" alt="Q3 circuit" class="center">
+        <img src="Images/ArduinoQ3.JPG" alt="Q3 Code" class="center">
           <b>This circuit is the similar as Q2, except now pin 4 is connected to a push button</b>
-          <p>In this circuit, pin 6 is set to an input, thus when the push button is pressed, a signal will be sent to the arduino through pin 6. Which the arduino will then turn pin 6,7 and 8 High in response</p>
-        <img src="Images/BlinkingLED.gif" alt="Blinking LED Circuit" class="center">
+          <p>In this circuit, pin 4 is set to an input, thus when the push button is pressed, a signal will be sent to the arduino through pin 6. Which the arduino will then turn pin 6,7 and 8 High in response</p>
+          <p>The program reads whether the push button is in a High or Low state before activating the LEDs.</p>
+        <img src="Images/LEDQ3.gif" alt="Blinking LED Circuit" class="center">
         <b>This is what it looks like in the physical circuit</b><p></p>
+      </div>
+      <li> Q4 Using a switch to control the type of light-up and flashing of LEDs</li>
+      <div id="right">
+        <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+      </div>
+      <div id="projectimages">
+        The circuit is the same as only the function of the button has changed from on and off LEDs to change the pattern of LEDs
+        <img src="Images/ArduinoQ4.JPG" alt="Q2 Code" class="center">
+        A count for when the button is press for different number of times the button is pressed and resets back to 0 after reaching the limit value.
+        The serial monitor will also only output once due the button states being changed after being read to stop the spamming of serial outputs.
+        <img src="Images/LEDCase.gif" alt="switch" class="center">
+        The different states can be seen at the Serial Monitor changing with each button press.
+          <b>This push button now controls the different states the LEDs can be in through the use of case function</b>
+          <p>As you can see, the pattern is different from Q3 and by using the case </p>
+        <img src="Images/LEDQ4.gif" alt="Blinking LED Circuit" class="center">
+        <b>This is what it looks like in the physical circuit</b><p></p>
+      </div>
+      <li> Q5 Modify program in Q4 to flash LEDs</li>
+      <div id="right">
+        <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+      </div>
+      <div id="projectimages">
+        <img src="Images/LEDsetupQ3.JPG" alt="Q5 circuit" class="center">
+        <img src="Images/ArduinoQ5.JPG" alt="Q5 Code" class="center">
+          <b>This circuit is the similar as Q4, except now the LEDs flash instead of staying on.</b>
+          <p>In the program, a delay is added to make it easier to see the LED flashing instantly.</p>
+        <img src="Images/LEDQ5.gif" alt="Blinking LED Circuit" class="center">
+        <b>This is what it looks like in the physical circuit</b><p></p>
+      </div>
+      <li> Q6 Modify program such that if you press the switch for longer than 3 seconds, the system switches off all LEDs and returns to initial state.</li>
+      <div id="right">
+        <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+      </div>
+      <div id="projectimages">
+        <img src="Images/PBReturnState.gif" alt="switch" class="center">
+          <b>This circuit only consist of changing the program</b>
+          <img src="Images/ArduinoQ6.JPG" alt="Q6 code" class="center">
+          <p>In this circuit, this chunk of code checks whethe the switch is still being held down after 3 seconds and if it is, it will change the state to initial state. Count 4 is my initial state thus I set count back to 4 to reset it.</p>
+        <img src="Images/LEDQ6.gif" alt="Blinking LED Circuit" class="center">
+        <b>This is what it looks like in the physical circuit</b><p>From the 2 gifs in this section, from the physical wired circuit, it can be seen that the push button reseted the circuit by skipping the all 3 LED light up state</p>
       </div>
       <p><u><h2>Codes that I have tried out</h2></u></p>
       <li>This are codes I have learnt in class and tested. Further explaination of it is <b>BELOW</b> them.</li>
