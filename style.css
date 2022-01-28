@@ -126,6 +126,7 @@ h3{
   border-radius: 25px;
   margin: 4px 2px;
   margin-bottom: 8px;
+  cursor: pointer;
 }
 #imageleftpadding{
   padding-top:5px;
