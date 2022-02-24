@@ -53,7 +53,7 @@
         This page is documentation of me applying what I have learnt in this module to make my very own first project through
         the use of CAD to design, 3D printing and Laser cutting to fabricate, and Arduino to program. The final project I have decided on
         is a Mechanical keypad as I am familiar with keyboards and understand the theory in making one, however I have not made one by myself before.
-        Thus, I will be attempting to make a smaller version of a keyboard to see whether I could apply my knowledge.
+        Thus, I will be attempting to make a smaller version of a keyboard to see whether I could apply my knowledge. <br> <a href="#start"> <b>(CLICK HERE TO GO STRAIGHT INTO MY PROJECT JOURNEY)</b></a>
       </div>
       <p><u><h2>Project Title: Mechanical Keypad</h2></u></p>
       <li><b> What does it do? </b></li>
@@ -108,6 +108,7 @@
         </table>
       </div id="tabless">
       </div>
+
     <li><b> Bill of Materials </b></li>
       <div id="right">
         <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
@@ -159,6 +160,384 @@
       <a href="https://shopee.sg/capablett-14x16mm-Potentiometer-Knob-Cap-Volume-Control-Aluminum-Encoder-Multimedia-Speaker-Spare-Parts-For-HIFI-Audio-Amplifier-Musical-Instruments-i.483368866.11081472720?sp_atk=4a6ff3d2-48b9-4b60-aadd-21ab8f752d18">
       Silver Encoder Knob (Shopee)</a>
     </div>
+    <li><b id="start"> Final look of Keypad </b></li>
+      <div id="right">
+        <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+      </div>
+      <div id="projectimages">
+        <img src = "Images/FinalProject.jpg" alt="Final look" class="center">
+        <img src="Images/FinalProject2.jpg" alt="Final look 2" class="center">
+      </div>
+      <li><b> Research into dimensions </b></li>
+        <div id="right">
+          <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+        </div>
+        <div id="projectimages">
+          <p>This initial step is me finding out more about the dimensions for different parts and how roughly big I have to make the container.</p>
+          <p><b><u> Dimensions for mechnical switches plate</u></b></p>
+          <a href="https://deskthority.net/viewtopic.php?t=20144"><b>(LINK 1)</b></a>
+          <a href="https://www.reddit.com/r/MechanicalKeyboards/comments/e03l8u/keyboard_plate_dimensions/"><b>(LINK 2)</b></a>
+          <p>From these links, I found out how why can the switches hole sometimes be in H shape or just a square which is for the H shape, it is to make sure that the swicthes are placed with the correct orreintation. And from the second link is where I got the thickness of my switch plate should be which is roughly 3mm.</p>
+          <a href="https://github.com/Maxr1998/Pulse_4k"><b>(LINK 3)</b></a>
+          <p>Using Maxr1998's project as reference, I looked into the dimensions he used like the spacing between each switch hole and how long he made his case.</p>
+          <p>This research into dimensions step is important as before designing in fusion360, I need to design my project to fit the components size as well. Although I am using someone else project as reference, I still used my own dimensions when needed like how I am increasing the size of my case.</p>
+        </div>
+        <li><b> 3D CAD design process </b>(*The text below them is their respective description*)</li>
+          <div id="right">
+            <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+          </div>
+          <div id="projectimages">
+            <p>First part of my project that I designed is the case. I will be going through what dimensions I used and how I got them along with what functions I used in fusion360.</p>
+            <img src="Images/Bottom.JPG" alt="Btm of case" class="center">
+            <p>I used this dimensions as from above, using Maxr1998, I really liked how minimalist his design was which when laser cutting I wouldn't have much problem.</p>
+            <p>I ended up extending the right side by 5mm as I was going to add a LED bar, thus the final dimensions are 88.5mm by 54mm</p>
+            <img src="Images/Front.JPG" alt="Fnt of case" class="center">
+            <p>The dimensions is 33mm by 88.50mm</p>
+            <p>After combining both surfaces the dimension would change to 33mm by 82.50mm, and example of how to combine is below. As to why it is 33mm and not 36mm when compared to the side, I wanted the majority of the front view at the bottom clear acrylic to be mostly clear acrylic to I didn't want a interlocking design there, thus the bottom on this piece is flat.</p>
+            <img src="Images/Cut.JPG" alt="Cut" class="center">
+            <p>The combine function has 2 selection that must be done, Target Body is the body that you wish to cut, Tool bodies is the body that will be cutting. Make sure to check keep tools so that the box wouldn't delete after combining.</p>
+            <img src="Images/Side1.JPG" alt="Side" class="center">
+            <p>The dimension is 36mm by 54mm. The hole placement has to be designed according to where the wire head will be and how big it is. I will be using a pro micro so my wire head will be a micro b plug which is about 10mm by 6mm. As for the height I measured the small breadboard with the pro micro on top and measured it from there, this may differ so alter the position as you wish.</p>
+            <img src="Images/Top.JPG" alt="Top" class="center">
+            <p>This dimension is also the same as the bottom which is 88.5mm by 54mm. This design as i said before is based on Maxr1998's design. I changed the rotary encoder to a on off switch instead, which is why the hole dimension is bigger which is 16mm in diameter. If you wish to find out more about where I got the dimensions from, do look at the links above which have links of where I researched. There is also the additional bar which I added which is going to be where light from the NeoPixel can be seen through which is about 3mm wide and since I will be using 3 of them long it will be 28mm long.</p>
+            <img src="Images/Final.JPG" alt="Final" class="center">
+            <p>After combining all the sides, this is what the final design will look like, as you can see the bottom from the front is all one piece so that the light design can be seen through it later on.</p>
+            <img src="Images/LaserCut.gif" alt="Laser cutter" class="center">
+            <p>I uploaded to files to coreldraw and started to cut out the case. Using the setting which I got from online <a href="https://academics.design.ncsu.edu/it/kb/suggested-laser-cutter-settings/"><b>LINK 4</b></a></p>
+            <img src="Images/Cutout.jpg" alt="Cut out" class="center">
+            <p>This are the parts I ended up with after cutting, the rotary encoder is changed to a on off switch due to needing one in our project and I did not have enough space to fit it in.</p>
+            <img src="Images/engrave1.jpg" alt="engrave image 1" class="center">
+            <img src="Images/engrave2.png" alt="engrave image 2" class="center">
+            <p>These are the engraving images I used. For engraving, set your laser cutter colour black lines to engraving settings since my images are black and white thats all I had to do. And then upload them to corelDraw as well before clicking print.</p>
+          </div>
+          <li><b> Designing keycaps </b></li>
+            <div id="right">
+              <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+            </div>
+            <div id="projectimages">
+              <p>For this part of the design, I will be using this image as my reference for dimensions for the keycap.</p>
+              <img src="Images/Keycapdimen.jpg" alt="keycap dimensions" class="center">
+              <p>I will now explain the functions and dimensions I used when using fusion360 for this process.</p>
+              <img src="Images/Keycap1.JPG" alt="keycap1" class="center">
+              <p>Using the rectangle function, the dimensions I used is 18.10mm by 18.10mm. I am starting the process from the bottom up.</p>
+              <img src="Images/Keycap2.JPG" alt="keycap2" class="center">
+              <p>This is the function that can set a different working plane through distance.</p>
+              <img src="Images/Keycap3.JPG" alt="keycap3" class="center">
+              <p>Set the distance to 9.39mm as that is the height of the keycap.</p>
+              <img src="Images/keycap4.JPG" alt="keycap4" class="center">
+              <p>Next start a sketch on that plane that you just made, and draw another layer which is 16mm by 12.37mm.</p>
+              <img src="Images/keycap5.JPG" alt="keycap5" class="center">
+              <p>use the loft function to connect the top layer and the bottom layer together.</p>
+              <img src="Images/keycap6.JPG" alt="keycap6" class="center">
+              <img src="Images/keycap7.JPG" alt="keycap7" class="center">
+              <p>Now use the fillet functions for both the top and bottom layer to smooth out the sides when lofting, the radius I used 1.5mm</p>
+              <img src="Images/keycap8.JPG" alt="keycap8" class="class">
+              <p>After filleting, the look of the keycap now should look like this</p>
+              <img src="Images/keycap9.JPG" alt="keycap9" class="center">
+              <p>Next use the shell function to remove the inside of the solid and have a 1mm wall thickness. It is ok if you would like to increase the wall thickness if you are scared that it might be too thin.</p>
+              <img src="Images/keycap10.JPG" alt="keycap10" class="center">
+              <p>Now <u><b>ONLY DO THIS STEP IF YOU HAVE FINALISED THE KEYCAP DESIGNING PROCESS</b></u> as if cutting the keycap for a more fancy design, it can cut the stem of the keycap as well. For the diameter I used 5.54mm according the the reference above and for the cross it is 2 1.35mm by 4.10mm rectangles to form it.</p>
+              <img src="Images/keycap11.JPG" alt="keycap11" class="center">
+              <p>Next I extruded the stem to the bottom of the keycap. I am doing this as I do not want my keycap to have inner surface issues when printing which may cause me the need of more time for this part of the project which is why my stem might be longer than actual products.</p>
+              <img src="Images/keycap12.JPG" alt="keycap12" class="center">
+              <p><u><b>This step is optional.</b></u> I am planning to make my keycap according to a design I found on Thingiverse<a href="https://www.thingiverse.com/thing:3841390/files"><u><b>(LINK 5)</b></u></a> which is a website where people upload their 3D models which other people can use.</p>
+              <p>In this step I am setting up a line which is 45 degrees so that i can make a construction place at that angle later on.</p>
+              <img src="Images/keycap13.JPG" alt="keycap13" class="center">
+              <p>Next using the contruction place on angle I clicked on the line which i previously set up and faced it in the direction of the keycap.</p>
+              <img src="Images/keycap14.JPG" alt="keycap14" class="center">
+              <p>Now I repeated using make contruction plane from distance function for 2mm every interval and made sure all of the keycap is being overlapped</p>
+              <img src="Images/keycap15.JPG" alt="keycap15" class="center">
+              <p>This is what the side view would look like.</p>
+              <img src="Images/keycap16.JPG" alt="keycap16" class="center">
+              <p>Now by drawing a construction line on the bottom to act as my surface, I drew another 2mm up and made a rectangle that covered the entire keycap.</p>
+              <img src="Images/keycap17.JPG" alt="keycap17" class="center">
+              <p>I then extruded the sketch by 1mm and now the keycap would look like this, repeat this for each layer.</p>
+              <img src="Images/printsettings.gif" alt="printing settings" class="center">
+              <p>These are the printer settings that I am using to print out the keycaps. the printing time was around 40 minutes for 1 keycap.</p>
+              <img src="Images/keycapprinted.jpg" alt="keycaps printed" class="center">
+              <p>These are what the keycaps looked like after printing</p>
+              <p>I am using my own printer which is a ender 3 pro so the print quality may vary as you can see, my middle keycap at the bottom is print poorly however still usable.</p>
+            </div>
+            <li><b> Elecronics schmetic </b></li>
+              <div id="right">
+                <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+              </div>
+              <div id="projectimages">
+                <img src="Images/Layout.JPG" alt="TinkerCAD" class="center">
+                <p>I will be explaining the components I used from left to right and also why I connected them that way.</p>
+                <p><b><u>FIRST COMPONENT</u></b></p>
+                <p>On the far left I have a regular flip switch, I will actually be using a rocker switch instead but tinkerCAD doesn't have that component so I'm using this switch instead to represent it. The pins are connected to 5v and GND and it doesn't matter which way it is connected to the switch since it doesn't have polarity.</p>
+                <p>The reason I have this feature is because we are required to put a on off switch on our project so this is an optional feature as pulling out the usb cable from the computer would be the safest option. However while playing around with the connections on the pro micro, I found out that directly connecting the 5V to the GND would make the board enter a sleep state despite still being on and won't run the program uploaded to it.</p>
+                <p><b><u>SECOND COMPONENT</u></b></p>
+                <p>On the left of the breadboard, I have 4 push buttons which are acting as my mechanical switches in this tinkerCAD representation. The buttons are connected to 1 pin to GND and 1 pin to their own respective numbered pin. It is wired this way as when programming, I will be using the INPUT_PULLUP pin mode for recognizing when the pin is being pressed (Further explanation on the code will be below).</p>
+                <p><b><u>THRID COMPONENT</u></b></p>
+                <p>On the Left side, there is a 4 LED NeoPixel, on my actual board I am only using 3 as only that much can fit in my case vertically. On the NeoPixel there is 3 copper surfaces, where the red wire is connected to is the 5V pin, the black wire is to the GND pin and the blue wire is the DIV pin which is where the information is being sent from the board to the NeoPixel about what colour should be outputted.</p>
+              </div>
+              <li><b> Arduino Code </b></li>
+                <div id="right">
+                  <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+                </div>
+                <div id="projectimages">
+                  <img src="Images/code.gif" alt="Arduino final code" class="center">
+                  <p>This gif is just a quick summary of the code that I will explain below.</p>
+                  <p>#include <Adafruit_NeoPixel.h><br>
+                    #ifdef __AVR__<br>
+                    #include <avr/power.h><br>
+                    #endif <br>
+                    #include <Keyboard.h><br></p>
+                  <p><b>So first I included all the nessecary libraries which are for the keyboard presses and for neopixel</b></p>
+                  <p>#define Up 3 <br>
+#define Down 4 <br>
+#define Left 2 <br>
+#define Right 8 <br>
+#define LED 7 <br></p>
+<p><b>This are the pins which I have used so I am naming them to make it easier to recognize when coding later. The directions I used are the switch's pins and LED is the neopixel</b></p>
+<p>int state1 = HIGH; <br>
+int state2 = HIGH; <br>
+int state3 = HIGH; <br>
+int state4 = HIGH; <br></p>
+<p><u>Next I set up 4 states for each switch so that when testing later the serial monitor will only have 1 output and not constently read and spam serial print later.</u></p>
+<p>Adafruit_NeoPixel bar = Adafruit_NeoPixel(3, LED, NEO_GRB + NEO_KHZ800); <br></p>
+<p><b>Next I set the parameters of the NeoPixel, the first parameter is the number of LEDs that you are using, the second parameter is which pin you are using. <u>CHANGE BAR INFRONT IF YOU DO NOT WANT TO NAME IT THAT.</u></b></p>
+<p>void setup() {
+  bar.begin(); <br>
+  bar.show(); <br>
+  Keyboard.begin(); <br>
+    pinMode (2, INPUT_PULLUP); <br>
+  pinMode (3, INPUT_PULLUP); <br>
+  pinMode (4, INPUT_PULLUP); <br>
+  pinMode (8, INPUT_PULLUP); <br>
+}</p>
+<p><b>Next in Void setup, (name of NeoPixel in my case its bar) begin is to activate the neopixel and show is to make the neopixel set at nothing to start. <br>Next the switches pins are set to input pull up, this is to save the trouble of only needing 2 connections to allow the arduino to know when it is pressed. <br>How it works is when there when the switch is not pressed, the pins are reading HIGH, while when it is pressed which is when the GND is connected, the pins will read LOW.</b></p>
+<p>void loop() { <br>
+  if (digitalRead(Up)==LOW) <br>
+  {if (state1 == HIGH) <br>
+  {Keyboard.press(KEY_UP_ARROW); <br>
+  Serial.println("UP"); <br>
+    for(int i=-1; i<3; i++) { <br>
+    bar.setPixelColor(i, bar.Color(255, 141, 241)); <br>
+
+    bar.show();   // Send the updated pixel colors to the hardware. <br>
+
+    delay(30); // Pause before next pass through loop <br>
+  } <br>
+  state1 = LOW; <br>
+} <br>
+  bar.setPixelColor(0, bar.Color(255, 141, 241)); <br>
+  bar.setPixelColor(1, bar.Color(255, 141, 241)); <br>
+  bar.setPixelColor(2, bar.Color(255, 141, 241)); <br>
+  bar.show(); <br>
+} <br>
+  if (digitalRead(Up)==HIGH) {if (state1 == LOW){  Keyboard.release(KEY_UP_ARROW); <br>
+  Serial.println("NOTHING"); <br>
+    bar.clear(); <br>
+  bar.show();} <br>
+  state1 = HIGH;} <br>
+  if (digitalRead(Down)==LOW) <br>
+  {if (state2 == HIGH) <br>
+  {Keyboard.press(KEY_DOWN_ARROW); <br>
+  Serial.println("DOWN"); <br>
+    for(int i=-1; i<3; i++) { <br>
+    bar.setPixelColor(i, bar.Color(251, 251, 145)); <br>
+
+    bar.show();   // Send the updated pixel colors to the hardware. <br>
+
+    delay(30); // Pause before next pass through loop <br>
+  }<br></p>
+  <p><b>This part long so I will cut short on my explaination. Using digitalRead on 1 of the pins, it will check whether the pin is in HIGH or LOW state. Next it will check what state it is in, after completing the loop once, it won't loop again unless the switch is released and pressed again. However if held, the keypress will continue to run and the neopixel will also stay on to represent it.</b></p>
+  <p><b>If it was only clicked once, the key will be played once and the neopixel will only flash it first to third pixel once. I then repeated this code 4 times with different key presses for each switch and have different colours so it can differentiated. The functions I have put in are Copy, paste, Arrow up and Arrow down.</b></p>
+  <p>Make sure to change the keys you want to be pressed.</p>
+  <img src="Images/codetest.gif" alt="testing code">
+  <p>Since I was unable to test my code using TinkerCAD, I used the serial monitor instead to check whether the key was being pressed and whether the output for neopixel and key was correct.</p>
+                </div>
+                <li><b> Full code I used </b></li>
+                  <div id="right">
+                    <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+                  </div>
+                  <div id="projectimages">
+                    #include <Adafruit_NeoPixel.h>
+  #ifdef __AVR__
+  #include <avr/power.h>
+  #endif
+  #include <Keyboard.h>
+  #define Up 3
+  #define Down 4
+  #define Left 2
+  #define Right 8
+  #define LED 7
+  int state1 = HIGH;
+  int state2 = HIGH;
+  int state3 = HIGH;
+  int state4 = HIGH;
+  // Parameter 1 = number of pixels in strip
+  // Parameter 2 = Arduino pin number (most are valid)
+  Adafruit_NeoPixel bar = Adafruit_NeoPixel(3, LED, NEO_GRB + NEO_KHZ800);
+  void setup() {
+    bar.begin();
+    bar.show();
+    Keyboard.begin();
+      pinMode (2, INPUT_PULLUP);
+    pinMode (3, INPUT_PULLUP);
+    pinMode (4, INPUT_PULLUP);
+    pinMode (8, INPUT_PULLUP);
+  }
+  void loop() {
+    if (digitalRead(Up)==LOW)
+    {if (state1 == HIGH)
+    {Keyboard.press(KEY_LEFT_CTRL);
+    Keyboard.press('+');
+    Serial.println("UP");
+      for(int i=-1; i<3; i++) {
+      bar.setPixelColor(i, bar.Color(255, 141, 241));
+
+      bar.show();   // Send the updated pixel colors to the hardware.
+
+      delay(30); // Pause before next pass through loop
+    }
+    state1 = LOW;
+    }
+    bar.setPixelColor(0, bar.Color(255, 141, 241));
+    bar.setPixelColor(1, bar.Color(255, 141, 241));
+    bar.setPixelColor(2, bar.Color(255, 141, 241));
+    bar.show();
+    }
+    if (digitalRead(Up)==HIGH) {if (state1 == LOW){  Keyboard.release(KEY_LEFT_CTRL);
+    Keyboard.release('-');
+    Serial.println("NOTHING");
+      bar.clear();
+    bar.show();}
+    state1 = HIGH;}
+    if (digitalRead(Down)==LOW)
+    {if (state2 == HIGH)
+    {Keyboard.press(KEY_LEFT_CTRL);
+    Keyboard.press('+');
+    Serial.println("DOWN");
+      for(int i=-1; i<3; i++) {
+      bar.setPixelColor(i, bar.Color(251, 251, 145));
+
+      bar.show();   // Send the updated pixel colors to the hardware.
+
+      delay(30); // Pause before next pass through loop
+    }
+    state2 = LOW;
+    }
+    bar.setPixelColor(0, bar.Color(251, 251, 145));
+    bar.setPixelColor(1, bar.Color(251, 251, 145));
+    bar.setPixelColor(2, bar.Color(251, 251, 145));
+    bar.show();
+    }
+    if (digitalRead(Down)==HIGH) {if (state2 == LOW){  Keyboard.release(KEY_LEFT_CTRL);
+    Keyboard.release('+');
+    Serial.println("NOTHING");
+      bar.clear();
+    bar.show();}
+    state2 = HIGH;}
+      if (digitalRead(Left)==LOW)
+    {if (state3 == HIGH)
+    {Keyboard.press(KEY_LEFT_CTRL);
+    Keyboard.press('c');
+    Serial.println("LEFT");
+      for(int i=-1; i<3; i++) {
+      bar.setPixelColor(i, bar.Color(248, 152, 128));
+
+      bar.show();   // Send the updated pixel colors to the hardware.
+
+      delay(30); // Pause before next pass through loop
+    }
+    state3 = LOW;
+    }
+    bar.setPixelColor(0, bar.Color(248, 152, 60));
+    bar.setPixelColor(1, bar.Color(248, 152, 60));
+    bar.setPixelColor(2, bar.Color(248, 152, 60));
+    bar.show();
+    }
+    if (digitalRead(Left)==HIGH) {if (state3 == LOW){  Keyboard.release(KEY_LEFT_CTRL);
+    Keyboard.release('c');
+    Serial.println("NOTHING");
+      bar.clear();
+    bar.show();}
+    state3 = HIGH;}
+      if (digitalRead(Right)==LOW)
+    {if (state4 == HIGH)
+    {Keyboard.press(KEY_LEFT_CTRL);
+    Keyboard.press('v');
+    Serial.println("RIGHT");
+      for(int i=-1; i<3; i++) {
+      bar.setPixelColor(i, bar.Color(251, 30, 255));
+
+      bar.show();   // Send the updated pixel colors to the hardware.
+
+      delay(30); // Pause before next pass through loop
+    }
+    state4 = LOW;
+    }
+    bar.setPixelColor(0, bar.Color(251, 30, 255));
+    bar.setPixelColor(1, bar.Color(251, 30, 255));
+    bar.setPixelColor(2, bar.Color(251, 30, 255));
+    bar.show();
+    }
+    if (digitalRead(Right)==HIGH) {if (state4 == LOW){  Keyboard.release(KEY_LEFT_CTRL);
+    Keyboard.release('v');
+    Serial.println("NOTHING");
+      bar.clear();
+    bar.show();}
+    state4 = HIGH;}
+    }
+
+                  </div>
+        <li><b> Assembly </b></li>
+        <div id="right">
+        <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+        </div>
+        <div id="projectimages">
+          <p>So the first step is to solder the components to the schemetic above.</p>
+          <p>Next is to assemble the case partially without the top piece yet. (Use any method e.g glue, hot glue, tape)</p>
+          <img src="Images/Wiring1.jpg" alt="neopixel" class="center">
+          <p>Next is to assemble the neopixel.</p>
+          <p>I have 2 black wires on the breadboard is to extend the number of GND pins</p>
+          <img src="Images/Wiring2.jpg" alt="Keys" class="center">
+          <p>Assemble the switches and any other components.</p>
+          <p>But with this step I had to use tweezers to slot the wires in which I was quite lucky with but this step could be improved!</p>
+          <img src="Images/FinalProject.jpg" alt="final" class="center">
+          <p>Now just close the box and enjoy the new keypad</p>
+        </div>
+        <ul><li><b> Presentation Slide </b></li></ul>
+        <div id="right">
+        <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+        </div>
+        <div id="projectimages">
+        <img src="Images/ProjectSlide.JPG" alt="project slide" class="center">
+        </div>
+        <ul><li><b> Presentation Video </b></li></ul>
+        <div id="right">
+        <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+        </div>
+        <div id="projectimages">
+        <iframe width="854" height="480" class="center" src="https://youtu.be/xaF4lXiDVdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        <p class="center"><a href=""><b>LINK</b></a> to video</p>
+        </div>
+        <ul><li><b> Ownership Card </b></li></ul>
+        <div id="right">
+        <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+        </div>
+        <div id="projectimages">
+          <img src="Images/Ownership.JPG" alt="ownership" class="center">
+        </div>
+          <ul><li><b> Conclusion </b></li></ul>
+          <div id="right">
+          <img src="Images/EklohqZVkAErCBN.png" alt="Navigation bar filler">
+          </div>
+          <div id="projectimages">
+            <p>There were many things that I could've improved on but I just didn't have much time to commit to it.</p>
+            <p>E.G<br>
+            - A better case design (Mine is too simple)<br>
+          - Could have printed better quality keycaps<br>
+        - Could have improve my physical wiring layout<br>
+      - Could have used case in programe so that I can include more functions
+    - Could have made 2 layers so that bottom layer can have a constantly on NeoPixel to make project look nicer</p>
+    <p>Though overall this was a good experience for future project that could better plan everything so that the final look would feel more impressive.<br> And with that I have completed the EP1000 course and applied the programs I have learnt to use and designed my very own project and completed it.</p>
+          </div>
+        </div>
         </p>
           <td></td>
         </div id="Main">
